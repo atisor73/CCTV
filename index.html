@@ -214,27 +214,35 @@
     <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
         <img class="page-image" src="eqn_models_2.jpg">
-
+            
+            
+            <!--      RESIDUALS -->
     <h3>Residuals</h3>
-    <p>The following boxplots show the linear vs. exponential model's residuals for every growth cycle of bacterium 1. Note that the y-axes are aligned for comparison, and that we are treating each growth event as a categorical variable (this is not a bar graph).
+    <p><strong>Residuals were calculated from the theoretical values generated from the parametrization of the empirical data, cycle by cycle. The following boxplots show the linear vs. exponential model's residuals for every growth cycle of bacterium 1. Note that the y-axes are aligned for comparison, and that we are treating each growth event as a categorical variable (this is not a bar graph).</strong>
     <em>Source Code: </em> <code>residuals()</code> function from <a href="caulobacterpkg/caulobacterpkg/modeling.py"><code>modeling.py</code></a></p>
 
     <div class="column">
         <img class="page-image" src="lin_resid_b1.png" style="width:380px">
-            <center>Figure 4a: Boxplots of linear residuals </center><center>for 20 growth cycles of bacterium 1</center>
-    </div>
-        
-    <img class="page-image" src="expo_resid_b1.png" style="width:380px">
-           <center>Figure 4b: </a>Boxplots of exponential residuals </center><center>for 20 growth cycles of bacterium 1</center>
-<p></p>
-    <p> The residuals do not appear to be normally distributed, meaning either our model is sensitive to initial values, or that the error behaves heteroscedastically. </p>
+
+    </div><img class="page-image" src="expo_resid_b1.png" style="width:380px"><p></p>
+           <center>Figure 4a: Boxplots of linear (left) and exponential (right) squared residuals</center><center> for all 20 growth cycles of bacterium 1 </center><p></p>
+           <p>The 91 cycles of bacterium 2 could not be compared comfrotably side-by-side on the monitor, but the first 20 cycles are shown below. The links under the caption lead to unabridged plots, with y-axes aligned accordingly, as well as the difference between linear and exponential sq residuals.  </p>
+    <div class="column">
+        <img class="page-image" src="lin_resid_b2_first20.svg" style="width:380px">
+    </div><img class="page-image" src="exp_resid_b2_first20.svg" style="width:380px"><p></p>
+        <img src="resid_diffs.svg" style="width:800px; height:300px">
+
+            <center>Figure 4b: First 20 growth cycles' boxplots of linear (left) and exponential (right) squared residuals</center><center> Difference between lin-exp for all cycles of bacterium 2 (bottom). </center>
+        <center><a href="lin_resid_b2_all.html">linear</a> | <a href="exp_resid_b2_all.html">exponential</a> | <a href="resid_diffs.html">differences</a></center>
+    
+    <p> The difference plot is bisected by the zero line. Greater probability mass sitting above this bisecting line indicates a greater deviation from the empirical data exhibited by the linear model. The generative exponential model thus shows a relatively closer fit to the empirical data. Furthermore, the very long necks of the residual boxplots for both bacteria do not appear to be normally distributed, suggesting that the error behaves heteroscedastically. </p>
+
 
             
             
-            
-            
-        <img class="page-image" src="b1_k*.png" style="width:130%">
-        <img class="page-image" src="b2_k*.png" style="width:90%">
+<!--                           UGLY PLOTS-->
+<!--        <img class="page-image" src="b1_k*.png" style="width:130%">-->
+<!--        <img class="page-image" src="b2_k*.png" style="width:90%">-->
             
             
             
