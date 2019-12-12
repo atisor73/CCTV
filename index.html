@@ -147,7 +147,7 @@
 
 <img src="lotsa_cauliflower.png" >
 <center>Figure 1: Experimental setup. A field of <em>C. Crescentus</em> </center>
-
+<br></br>
 <h2 id="img processing">Image Processing</h2>
 
 <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
@@ -168,7 +168,7 @@
     <img src="marr_hildreth_1.gif" style="width:90%">
         <center>Figure 2b: Screen-recording of applied sobel-filters for bacterium 1.</center>
         
-        
+    <br></br>
     <h2 id="Segmentation">Segmentation Methodology</h2>
     <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
@@ -183,7 +183,7 @@
         <center>      </center>
 <!--how to load from github-->
 <!--      <p><img src="https://gchure.github.io/assets/img/mscl.gif" style="width: 20%" /></p>-->
-        
+        <br></br>
         <h2 id="Segmentation">Segmentation Corrections</h2>
         <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
@@ -215,6 +215,7 @@
 
 
         <!--      MODELING PLOTS-->
+        <br></br>
     <h2 id="summary">Modeling Growth: Linear or Exponential?</h2>
     <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
@@ -272,8 +273,9 @@
             
             
             
-            
-    <h2 id="summary">Further Analyses</h2>
+    <br></br>
+    <br></br>
+    <h1 id="summary">Further Analysis</h1>
     <hr style="margin-right: auto; width: 100%; color: #f2f2f2" />
 
     <p>The <code>growth_data()</code> function in <a href="caulobacterpkg/caulobacterpkg/modeling.py"><code>'modeling.py'</code></a> was used to extract relevant data for the plots below.</p>
@@ -298,15 +300,14 @@
     <p><strong>Another question we could ask is how we expect the parent cell size in the next cycle to vary with the maximum joint size of both parent and daughter cell from the previous cycle. In other words, how much 'substance' the parent bacterium is willing to depart with. For example, if the division hovers around a fraction of 50/50, it would mean that the parent size ~= daughter size after division, and we would expect numerically the initial size in the next cycle to be half of the final size in the previous cycle.</strong></p>
     <p>Hovering over individual data points, We can see from the plot below a sort of 'preferential model': the bacterial response is to divide above or below the equilibrium threshold, giving less "stuff" to the daughter cell if it is below its equilibrium size (higher fraction), and more (smaller fraction) when the bacterium cannot sustain its own size. I believe that this is what the "critical capacity" size the paper refers to!</p>
         <img class="page-image" src="fractions_org.png" style="width:70%">
-            <center><a href="fraction.html">Figure 7</a>: Fractions of birth size of this cycle / division size of last cycle splined with respect to time.</center>
-    
+            <center><a href="fraction.html">Figure 7</a>: Fractions of birth size from current cycle / division size from previous cycle </center><center>splined with respect to time.</center>
     
             
   </header> <!-- End Header -->
   
   
   
-  
+
 
 <!--<script type="math/tex; mode=display">f(n\,\vert\,N, p) = \frac{N!}{n! (N - n)!}p^n(1 - p)^{N - n},</script>-->
 <!--<script type="math/tex; mode=display">S = k_b\ln \Omega. \tag{1}</script>-->
@@ -316,7 +317,9 @@
   
 <h2 id="summary">Summary</h2>
 <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
-<p>A short summary of your work goes here. Think “significance statement”. Nisi bushwick seitan et authentic aute, laboris blog sed in wayfarers lyft plaid ut. Id aesthetic venmo, palo santo aliqua photo booth blue bottle. Meditation non copper mug lomo glossier kombucha. Cred laboris meditation poke sriracha street art letterpress food truck master cleanse adipisicing. Hashtag affogato chambray vaporware subway tile, kogi helvetica ea tacos sint brooklyn. Williamsburg waistcoat raclette seitan glossier messenger bag dolore ramps, flannel magna nisi hot chicken elit pariatur kale chips.</p>
+<p>
+Equipped with the elegant experimental design of the Scheher Lab, we were able to observe how individual bacterium grow with respect to time. From these images, we studied their behaviors within cycles, between cycles, and determined that not only do bacterial colonies grow exponentially, but the rate at which the actual size of individual cells also grows exponentially. We observed that the parent bacterium divides a bit selfishly, retaining more than half of its size between growth cycles. Despite the considerable reactions and chaotic processes during cell division, the underlying growth followed a predictable pattern.
+</p>
 
 
 <!--    LINKS TO CSV's and TIF images -->
@@ -335,7 +338,7 @@
 <h2 id="acknowledgments">Acknowledgments</h2>
 <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
-<p>We thank Iyer-Biswas of the Scherer lab for sharing this data, the BeBi103 TA's for their time and patience, Griffin Chure for this aesthetic source code, Gonzalez and Woods for their graphical explanations of structuring elements, and lastly, Justin Bois for making this course possible.</p>
+<p>We thank Iyer-Biswas of the Scherer lab for sharing this data, the BeBi103 TA's for their time and patience, Griffin Chure for this aesthetic source code, Gonzalez and Woods for their graphical explanations of structuring elements, the general community of StackExchange, whom without most of our code and analysis would not be possible, and lastly, Justin Bois for making this course possible.</p>
 
       <div class="page-footer">
       </div>
