@@ -161,7 +161,7 @@
     <img src="bacterium_1_display.gif" style="width:90%">
         <center>Figure 2a: Screen-recording of pre-filtered frames of bacterium 1.</center>
         <center>Frame rate: 1 frame/minute, interpixel spacing of 0.052 µm, images acquired at 24∘C</center>
-        
+    <br></br>
     <p> Since noise can cause one pixel to look very different from its neighbors, the <a href="https://en.wikipedia.org/wiki/Marr%E2%80%93Hildreth_algorithm">Marr Hildreth algorithm</a> was used to apply a Sobel filter, utilizing a nice computation technique taking the log of the gaussian, operating under the principle that pixels along an edge share similar values.
     </p>
     
@@ -230,9 +230,9 @@
 
     <div class="column">
         <img class="page-image" src="lin_resid_b1.png" style="width:380px">
-
     </div><img class="page-image" src="expo_resid_b1.png" style="width:380px"><p></p>
            <center>Figure 4a: Boxplots of linear (left) and exponential (right) squared residuals</center><center> for all 20 growth cycles of bacterium 1 </center><p></p>
+<!--           <br></br>-->
            <p>The 91 cycles of bacterium 2 could not be compared comfrotably side-by-side on the monitor, but the first 20 cycles are shown below. The links under the caption lead to unabridged plots, with y-axes aligned accordingly, as well as the difference between linear and exponential sq residuals.  </p>
     <div class="column">
         <img class="page-image" src="lin_resid_b2_first20.svg" style="width:380px">
@@ -248,6 +248,7 @@
     
     
 <!--                     AKAIKE INFORMATION CRITERION-->
+    
     <h3>Akaike information criterion (AIC)</h3>
     <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
 
@@ -276,10 +277,11 @@
     <br></br>
     <br></br>
     <h1 id="summary">Further Analysis</h1>
-    <hr style="margin-right: auto; width: 100%; color: #f2f2f2" />
-
-    <p>The <code>growth_data()</code> function in <a href="caulobacterpkg/caulobacterpkg/modeling.py"><code>'modeling.py'</code></a> was used to extract relevant data for the plots below.</p>
+    <hr style="margin-left: auto; width: 100%; color: #f2f2f2" />
+    <p> Below, we explore the behaviors of interdivisional times and fractional return in the two bacteria. The <code>growth_data()</code> function in <a href="caulobacterpkg/caulobacterpkg/modeling.py"><code>'modeling.py'</code></a> was used to extract relevant data for the plots below.</p>
     <h3 id="interdivision times">Interdivision times</h3>
+    <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
+
     <p><strong>A question we might ask is whether or not the duration of growth cycles is speeding up, slowing down, remaining fairly constant, or conforming to some other distribituion. You could imagine the reasons for the cell to divide differently as it ages. The ECDF below show that within our time frame of study, these times could be modeled as normally distributed. </strong></p>
 
 <!--        <img class="page-image" src="interdivision_ecdf.png" style="width:110%">-->
@@ -297,6 +299,8 @@
             <center><a href="minmax_areas.html">Figure 6</a>: Minimum and maximum areas splined with respect to time.</center>
         <p>As discussed in <a href="https://www.pnas.org/content/111/45/15912">this paper</a>, the caulobacter appear to grow biphasically, meaning a primary growth pattern resulting in constant increments between generations, and then a secondary pattern with constant growth proportional to initial area. From the modeling above, we saw a dependency on initial area within each cycle, and we can see from the minimum and maximum area plot above, that successive generations do indeed have relatively constant growths; in other words, the max. - min. area in each cycle fluctuates around a constant.</p>
     <h3 id="interdivision times">Fractional Return</h3>
+    <hr style="margin-left: auto; margin-right: auto; width: 100%; color: #f2f2f2" />
+
     <p><strong>Another question we could ask is how we expect the parent cell size in the next cycle to vary with the maximum joint size of both parent and daughter cell from the previous cycle. In other words, how much 'substance' the parent bacterium is willing to depart with. For example, if the division hovers around a fraction of 50/50, it would mean that the parent size ~= daughter size after division, and we would expect numerically the initial size in the next cycle to be half of the final size in the previous cycle.</strong></p>
     <p>Hovering over individual data points, We can see from the plot below a sort of 'preferential model': the bacterial response is to divide above or below the equilibrium threshold, giving less "stuff" to the daughter cell if it is below its equilibrium size (higher fraction), and more (smaller fraction) when the bacterium cannot sustain its own size. I believe that this is what the "critical capacity" size the paper refers to!</p>
         <img class="page-image" src="fractions_org.png" style="width:70%">
