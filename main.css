@@ -29,9 +29,14 @@ $header-thickness: 56px;
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul {
   margin: 0;
   padding: 0;
+}
+figure{
+    margin-bottom:0rem;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -40,7 +45,7 @@ dl, dd, ol, ul, figure {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
+  margin-bottom: 0rem;
   font-weight: bold;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -55,7 +60,7 @@ h2 {
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
 }
 h4, h5, h6 {
   margin-top: 1rem;
@@ -82,6 +87,12 @@ p {
   margin-right: 0;
   line-height: 1.65;
   font-family: 'Cardo', sans-serif;
+}
+
+h1.page-header {
+    margin-bottom: 0em;
+  margin: 0em;
+  padding: 0em;
 }
 
 /* Lists */
@@ -215,7 +226,7 @@ pre code {
 
 
 .container {
-  width: 1100px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -236,12 +247,12 @@ pre code {
   padding-top:  56px+10px;
   margin: auto;
   display: block;
-  width: 1100px - 20px;
+  width: 1300px - 20px;
 }
 .posts-wrapper h1 {
   margin: 20px 0px 5px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .container {
     width: 95vw;
     margin-left: auto;
@@ -263,7 +274,7 @@ pre code {
   text-align: center;
   min-height: 56px;
   line-height: 45px;
-  width: 1100px;
+  width: 1300px;
 }
 .footer a {
   color: black;
@@ -271,7 +282,7 @@ pre code {
   text-decoration: none;
   border-bottom: 0px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .footer {
     background: white;
     color: black;
@@ -286,13 +297,13 @@ pre code {
 
 .site-header {
   min-height: 56px;
-  width: 1100px;
+  width: 1300px;
   position: fixed;
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .site-header {
       min-height: 56px;
       width: 95vw;
@@ -337,7 +348,7 @@ pre code {
   Responsiveness with a dropdown menu
 */
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   .dropbtn {
     display: none;
   }
@@ -345,7 +356,7 @@ pre code {
     display: none;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .menu-list {
     display: none;
   }
@@ -538,7 +549,7 @@ pre code {
   display: block;
   max-width: 600px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .page-content {
     width: 60vw;
     display: block;
@@ -615,7 +626,7 @@ pre code {
 /*  font-family: $base-font-family;*/
    font-family:'Bellefair', sans-serif;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .related-thumbnail{
     width: 60vw;
   }
