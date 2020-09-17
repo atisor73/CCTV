@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2rem;
 }
+
+h1.title{
+    margin-bottom:0rem;
+}
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
@@ -87,6 +91,9 @@ p {
   margin-right: 0;
   line-height: 1.65;
   font-family: 'Cardo', sans-serif;
+}
+p.names{
+    margin-top: 0em;
 }
 
 h1.page-header {
